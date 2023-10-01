@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/* Navbar CSS code start*/
+
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: #f7f1ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 60px 1px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+
+.logo_img {
+  height: 5em;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 1.6rem;
+  font-size: 1.1rem;
+}
+
+.mobile_menu_icon img {
+  cursor: pointer;
+  height: 35px;
+}
+
+.s_link {
+  display: flex;
+  align-items: center;
+}
+
+.s_link img {
+  cursor: pointer;
+  margin: 7px;
+}
+
+@media (max-width:800px) {
+
+  .menu,
+  .s_link img {
+      display: none;
+  }
+
+  .mobile_menu_icon {
+      display: flex;
+      align-items: center;
+  }
+
+}
+
+@media (min-width:800px) {
+  .mobile_menu_icon img {
+      display: none;
+  }
+}
+
+/* Navbar CSS code ends */
+
+
+/* Contact Us css code starts here */
+
+.main-img-container {
+  margin-top: 90px;
+  margin-bottom: 80px;
+  height: 30vh;
+  background: url(images/helio-dilolwa-3Yi7garGIHI-unsplash.jpg);
+  background-size: cover;
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-color: #999;
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+}
+
+.main-contact-us h1 {
+  margin-left: 20px;
+  color: white;
+  font-size: 70px;
+
+  letter-spacing: 9px;
+}
+
+@media (max-width:720px) {
+  .main-contact-us h1{
+    font-size: 50px;
+  }
+}
+.contact-page-section{
+  margin-bottom: 200px;
+
+}
+.contact-page-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+}
+
+.contact-info-div {
+  flex: 2;
+ 
+}
+
+.photo-map-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.contact-subinfo-div {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.address,
+.get-in-touch,
+.hours {
+  width: 100%;
+  display: flex;
+
+}
+
+.divider {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.address-with-icon,
+.get-in-touch-with-icon,
+.hours-with-icon {
+  width: 30%;
+  display: flex;
+}
+
+.address-info,
+.get-in-touch-info,
+.hours-info {
+  width: 70%;
+}
+
+.timing {
+  list-style: none;
+  line-height: 30px;
+}
+
+.timing li>span {
+  display: inline-block;
+  min-width: 115px;
+}
+
+.photo-div img {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.map-div iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.reply-msg-div h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.contact-form input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+input[type=text],
+input[type=email],
+textarea {
+  border: 1px solid #dbd2d2;
+  border-radius: 10px;
+  padding: 18px 15px;
+}
+
+.submit-btn {
+  background-color: #fdcb0a;
+  color: black;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: background-color,0.4s;
+}
+.submit-btn:hover{
+  background-color: #691971;
+  color: white;
+}
+
+@media (max-width:1080px) {
+
+  .address,
+  .get-in-touch,
+  .hours {
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .address-with-icon,
+  .get-in-touch-with-icon,
+  .hours-with-icon {
+    width: 100%;
+
+  }
+}
+
+@media (max-width:1080px) {
+  .contact-page-container {
+    flex-direction: column;
+  }
+
+
+
+  .photo-div img {
+    width: 100%;
+  }
+
+}
+
+
+/* Contact Us Css code ends here */
+
+
+
+
+/* Footer css code starts here */
+
+
+.footer {
+
+  position: relative;
+  background-color: #f7f1ff;
+  
+}
+
+.footer-container {
+
+  padding-top: 150px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+
+
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+
+}
+
+.contact-us-container {
+
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  background-color: #691971;
+  color: white;
+  padding: 70px 30px 70px 30px;
+
+  border-radius: 20px;
+  position: absolute;
+  top: -18%;
+  z-index: 1;
+
+}
+
+.contact-us-heading {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+
+.contact-us-button button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 12px;
+  background-color: #fdcb0a;
+  color: white;
+  font-weight: bolder;
+}
+
+.contact-us-button button:hover {
+  background-color: rgb(233, 192, 45);
+}
+
+.footer-info-flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 30%;
+}
+
+.footer-logo>img {
+  width: 70%;
+
+}
+
+ul {
+  padding: 0;
+}
+ul a{
+  text-decoration: none;
+}
+
+.footer-info h3 {
+  color: #78528c;
+  margin-bottom: 23px;
+}
+
+ul li {
+  list-style: none;
+  line-height: 55px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: #a0258f;
+}
+
+.footer-social-img img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding-right: 4px;
+}
+
+.footer-contact-info {
+  line-height: 30px;
+}
+
+.footer-phone,
+.footer-address,
+.footer-email {
+  margin-bottom: 23px;
+}
+
+.footer-contact-subinfo {
+  letter-spacing: 2px;
+  color: #a0258f;
+  font-size: 21px;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width:1080px) {
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-info-flex {
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  .footer-logo {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .footer-info-flex {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  ul {
+      margin-bottom: 20px;
+  }
+
+  ul li {
+      line-height: 40px;
+  }
+
+  .footer-info h3 {
+      margin-bottom: 13px;
+  }
+
+  .footer-logo {
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer-logo>img {
+      width: 190px;
+  }
+
+
+}
+
+@media (max-width:768px) {
+  .contact-us-container {
+      flex-direction: column;
+      padding: 30px 20px 30px 20px;
+      top: -12%;
+  }
+
+  .contact-us-button {
+      margin-top: 20px;
+  }
+}
+
+@media (max-width:370px) {
+  .footer-container {
+      padding-top: 200px;
+  }
+
+}
+
+/* Footer css code ends here */

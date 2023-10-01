@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Navbar CSS code start*/
+
+nav {
+    width: 100%;
+    height: 90px;
+    background-color: #f7f1ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 60px 1px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+
+.logo_img {
+    height: 5em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 1.6rem;
+    font-size: 1.1rem;
+}
+
+.mobile_menu_icon img {
+    cursor: pointer;
+    height: 35px;
+}
+
+.s_link {
+    display: flex;
+    align-items: center;
+}
+
+.s_link img {
+    cursor: pointer;
+    margin: 7px;
+}
+
+@media (max-width:800px) {
+
+    .menu,
+    .s_link img {
+        display: none;
+    }
+
+    .mobile_menu_icon {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (min-width:800px) {
+    .mobile_menu_icon img {
+        display: none;
+    }
+}
+
+/* Navbar CSS code ends */
+
+
+
+/* Product Description CSS code starts here */
+
+.product-section{
+   padding-top: 130px;
+   margin-bottom: 200px;
+}
+.product_description{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 40% 30%;
+    place-content: center;
+    
+}
+
+.desc_img{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F2F4FB;
+    width: 100%;
+    height: 80vh;
+}
+.desc_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.disc_info{
+    margin-top: 10%;
+}
+.disc_title h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+.disc_title span{
+    font-size: 24px;
+}
+.disc_title hr{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(225, 225, 225);
+}
+.disc_details hr{
+    border: 1px solid rgb(225, 225, 225);
+
+}
+.disc_stock{
+    display: flex;
+    align-items: center;
+}
+.disc_stock span img{
+    width: 30px;
+}
+.disc_subdetails{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: #F2F4FB;
+    line-height: 25px;
+
+}
+
+.enquiry{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.enquire_btn_div{
+    margin-top: 20px;
+}
+#enquire_btn{
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 100px;
+    font-size: 20px;
+    background-color: purple;
+    color: white;
+}
+.disc_social_icon{
+    margin-top: 20px;
+}
+.disc_social_icon img{
+    padding-right: 12px;
+    cursor: pointer;
+
+}
+
+
+@media (max-width:1250px) {
+    .product_description{
+        grid-template-columns: 60% ;
+
+    }
+}
+@media (max-width:800px) {
+    .product_description{
+        grid-template-columns: 80% ;
+
+    }
+    .disc_title h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width:600px) {
+    .product_description{
+        grid-template-columns: 90% ;
+    }
+    #enquire_btn{
+        padding: 15px 50px;
+    }
+    .disc_social_icon{
+        margin-left: 10px
+    }
+    .disc_title h1{
+        font-size: 1.7rem;
+    }
+    .desc_img{
+        height: 100%;
+    }
+}
+
+
+/* Product Description CSS code ends here */
+
+
+/* Footer css code starts here */
+
+.footer {
+
+    position: relative;
+
+    background-color: #f7f1ff;
+
+}
+
+.footer-container {
+
+    padding-top: 150px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-us-container {
+
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #691971;
+    color: white;
+    padding: 70px 30px 70px 30px;
+
+    border-radius: 20px;
+    position: absolute;
+    top: -18%;
+    z-index: 1;
+
+}
+
+.contact-us-heading {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+.contact-us-button button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 12px;
+    background-color: #fdcb0a;
+    color: white;
+    font-weight: bolder;
+}
+
+.contact-us-button button:hover {
+    background-color: rgb(233, 192, 45);
+}
+
+.footer-info-flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+.footer-logo>img {
+    width: 70%;
+
+}
+
+ul {
+    padding: 0;
+}
+ul a{
+    text-decoration: none;
+}
+
+.footer-info h3 {
+    color: #78528c;
+    margin-bottom: 23px;
+}
+
+ul li {
+    list-style: none;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #a0258f;
+}
+
+.footer-social-img img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-right: 4px;
+}
+
+.footer-contact-info {
+    line-height: 30px;
+}
+
+.footer-phone,
+.footer-address,
+.footer-email {
+    margin-bottom: 23px;
+}
+
+.footer-contact-subinfo {
+    letter-spacing: 2px;
+    color: #a0258f;
+    font-size: 21px;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width:1080px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-info-flex {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-info-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        line-height: 40px;
+    }
+
+    .footer-info h3 {
+        margin-bottom: 13px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo>img {
+        width: 190px;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .contact-us-container {
+        flex-direction: column;
+        padding: 30px 20px 30px 20px;
+        top: -12%;
+    }
+
+    .contact-us-button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:370px) {
+    .footer-container {
+        padding-top: 200px;
+    }
+
+}
+
+/* Footer css code ends here */
