@@ -1,11 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
-
-
 
 /* Navbar CSS code start*/
 
@@ -48,28 +46,25 @@ nav {
   margin: 7px;
 }
 
-@media (max-width:800px) {
-
+@media (max-width: 800px) {
   .menu,
   .s_link img {
-      display: none;
+    display: none;
   }
 
   .mobile_menu_icon {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
   }
-
 }
 
-@media (min-width:800px) {
+@media (min-width: 800px) {
   .mobile_menu_icon img {
-      display: none;
+    display: none;
   }
 }
 
 /* Navbar CSS code ends */
-
 
 /* Contact Us css code starts here */
 
@@ -95,14 +90,13 @@ nav {
   letter-spacing: 9px;
 }
 
-@media (max-width:720px) {
-  .main-contact-us h1{
+@media (max-width: 720px) {
+  .main-contact-us h1 {
     font-size: 50px;
   }
 }
-.contact-page-section{
+.contact-page-section {
   margin-bottom: 200px;
-
 }
 .contact-page-container {
   width: 80%;
@@ -113,7 +107,6 @@ nav {
 
 .contact-info-div {
   flex: 2;
- 
 }
 
 .photo-map-div {
@@ -123,17 +116,12 @@ nav {
   gap: 20px;
 }
 
-
 .contact-subinfo-div {
   width: 100%;
 
   display: flex;
   flex-direction: column;
 }
-
-
-
-
 
 .contact-icon {
   width: 20px;
@@ -146,7 +134,6 @@ nav {
 .hours {
   width: 100%;
   display: flex;
-
 }
 
 .divider {
@@ -172,7 +159,7 @@ nav {
   line-height: 30px;
 }
 
-.timing li>span {
+.timing li > span {
   display: inline-block;
   min-width: 115px;
 }
@@ -199,7 +186,6 @@ textarea {
   width: 100%;
   margin-bottom: 10px;
   font-size: 18px;
-
 }
 
 .contact-form label {
@@ -207,9 +193,8 @@ textarea {
   margin-bottom: 10px;
 }
 
-
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   border: 1px solid #dbd2d2;
   border-radius: 10px;
@@ -223,78 +208,62 @@ textarea {
   cursor: pointer;
   border: none;
   border-radius: 10px;
-  transition: background-color,0.4s;
+  transition: background-color, 0.4s;
 }
-.submit-btn:hover{
+.submit-btn:hover {
   background-color: #691971;
   color: white;
 }
 
-@media (max-width:1080px) {
-
+@media (max-width: 1080px) {
   .address,
   .get-in-touch,
   .hours {
     flex-direction: column;
     gap: 20px;
-
   }
 
   .address-with-icon,
   .get-in-touch-with-icon,
   .hours-with-icon {
     width: 100%;
-
   }
 }
 
-@media (max-width:1080px) {
+@media (max-width: 1080px) {
   .contact-page-container {
     flex-direction: column;
   }
 
-
-
   .photo-div img {
     width: 100%;
   }
-
 }
-
 
 /* Contact Us Css code ends here */
 
-
-
-
 /* Footer css code starts here */
 
-
 .footer {
-
   position: relative;
   background-color: #f7f1ff;
-  
 }
 
 .footer-container {
-
   padding-top: 150px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
   width: 80%;
   margin: auto;
-
-
 }
 
 .contact-us {
   display: flex;
   justify-content: center;
-
 }
 
 .contact-us-container {
-
   display: flex;
   justify-content: space-between;
   width: 60%;
@@ -306,14 +275,12 @@ textarea {
   position: absolute;
   top: -18%;
   z-index: 1;
-
 }
 
 .contact-us-heading {
   font-size: 20px;
   line-height: 35px;
 }
-
 
 .contact-us-button button {
   border: none;
@@ -336,19 +303,15 @@ textarea {
   width: 100%;
 }
 
-.footer-logo {
-  width: 30%;
-}
 
-.footer-logo>img {
-  width: 70%;
-
+.footer-logo > img {
+  width: 150px;
 }
 
 ul {
   padding: 0;
 }
-ul a{
+ul a {
   text-decoration: none;
 }
 
@@ -396,68 +359,65 @@ ul li:hover {
   padding-bottom: 20px;
 }
 
-@media (max-width:1080px) {
+@media (max-width: 1080px) {
   .footer-container {
-      flex-direction: column;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .footer-info-flex {
-      width: 100%;
-      justify-content: space-between;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .footer-logo {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .footer-info-flex {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   ul {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   ul li {
-      line-height: 40px;
+    line-height: 40px;
   }
 
   .footer-info h3 {
-      margin-bottom: 13px;
+    margin-bottom: 13px;
   }
 
   .footer-logo {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
-  .footer-logo>img {
-      width: 190px;
+  .footer-logo > img {
+    width: 190px;
   }
-
-
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .contact-us-container {
-      flex-direction: column;
-      padding: 30px 20px 30px 20px;
-      top: -12%;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+    top: -12%;
   }
 
   .contact-us-button {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 }
 
-@media (max-width:370px) {
+@media (max-width: 370px) {
   .footer-container {
-      padding-top: 200px;
+    padding-top: 200px;
   }
-
 }
 
 /* Footer css code ends here */
